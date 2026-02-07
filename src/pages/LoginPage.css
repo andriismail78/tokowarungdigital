@@ -1,0 +1,138 @@
+body {
+  margin: 0;
+  font-family: 'Inter', sans-serif;
+  background-color: #f9fafb;
+  color: #111827;
+}
+
+.login-page {
+  display: flex;
+  min-height: 100vh;
+  width: 100%;
+}
+
+/* SIDEBAR PROMO */
+.login-sidebar {
+  flex: 1;
+  background: linear-gradient(135deg, #2563eb, #1e3a8a);
+  color: #fff;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-sidebar h1 {
+  font-size: 36px;
+  margin-bottom: 20px;
+  line-height: 1.2;
+}
+
+.login-sidebar p {
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* FORM LOGIN */
+.login-form-container {
+  flex: 1;
+  background-color: #ffffff;
+  padding: 80px 60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.login-form-container h2 {
+  font-size: 28px;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.login-form-container p {
+  margin-bottom: 20px;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+.login-form-container form {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.login-form-container label {
+  text-align: left;
+  font-size: 14px;
+  color: #374151;
+}
+
+.login-form-container input {
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  font-size: 14px;
+}
+
+.login-form-container input:focus {
+  border-color: #2563eb;
+  outline: none;
+}
+
+.login-form-container button[type="submit"] {
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background-color: #2563eb;
+  color: #fff;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.login-form-container button[type="submit"]:hover {
+  background-color: #1e40af;
+}
+
+.forgot-password {
+  text-align: right;
+}
+
+.forgot-password button {
+  background: none;
+  border: none;
+  color: #2563eb;
+  font-size: 14px;
+  cursor: pointer;
+  padding: 0;
+}
+
+.forgot-password button:hover {
+  text-decoration: underline;
+}
+
+.message {
+  background-color: #fef3c7;
+  color: #b45309;
+  padding: 10px 14px;
+  border-radius: 8px;
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: left;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1024px) {
+  .login-page {
+    flex-direction: column;
+  }
+
+  .login-sidebar,
+  .login-form-container {
+    padding: 40px 20px;
+  }
+
+  .login-sidebar h1 {
+    font-size: 28px;
+  }
+}
